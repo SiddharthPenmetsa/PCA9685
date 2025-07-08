@@ -23,6 +23,8 @@
     OR OTHER DEALINGS IN THE SOFTWARE.
 '''
 
+# Set environment variable for Jetson board detection
+os.environ['BLINKA_FORCEBOARD'] = 'JETSON_ORIN_NX'
 import os
 import sys
 import time
@@ -31,8 +33,6 @@ import curses
 
 global image_count
 image_count = 0
-# Set environment variable for Jetson board detection
-os.environ['BLINKA_FORCEBOARD'] = 'JETSON_ORIN_NX'
 
 # Rendering status bar
 def RenderStatusBar(stdscr):
