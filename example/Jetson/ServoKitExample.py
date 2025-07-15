@@ -24,8 +24,8 @@
 '''
 
 # Set environment variable for Jetson board detection
-os.environ['BLINKA_FORCEBOARD'] = 'JETSON_ORIN_NX'
 import os
+os.environ['BLINKA_FORCEBOARD'] = 'JETSON_ORIN_NX'
 import sys
 import time
 from ServoKit import *
